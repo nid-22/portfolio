@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+	<title>Blog post | Initio - Free, multipurpose html5 template by GetTemplate</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+	<!-- Bootstrap -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icon font -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+
+</head>
+<body>
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="1">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src="assets/images/guy.jpg" alt="">
+			<span class="title">Nidhi Poojary</span>
+			<span class="tagline">Python Developer</span>
+		</h1>
+	</div>
+
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+
+			<div class="navbar-collapse collapse">
+
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a target="_blank" href="assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
+					<li class="active"><a href="blog.html">Blog</a></li>
+				</ul>
+
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+</header>
+
+<main id="main">
+
+	<div class="container">
+
+		<div class="row topspace">
+			<div class="col-sm-8 col-sm-offset-2">
+
+ 				<article class="post">
+					<header class="entry-header">
+ 						<div class="entry-meta">
+ 							<span class="posted-on"><time class="entry-date published" date="2024-01-02">Jan 2024</time></span>
+ 						</div>
+ 						<h1 class="entry-title"><a href="single.html" rel="bookmark">Lending Club case study</a></h1>
+					</header>
+					<div class="entry-content">
+                            <object data="assets/images/lending_club_case_study.pdf#toolbar=0&navpanes=0"
+                                    width="730"
+                                    height="450">
+                            </object>
+						<h2>Table of Contents</h2>
+                        <ul>
+                            <li><a href="#general-information">General Information</a></li>
+                            <li><a href="#technologies-used">Technologies Used</a></li>
+                            <li><a href="#conclusions">Conclusions</a></li>
+                        </ul>
+                        <section id="general-information">
+                            <h2>
+                                General Information
+                            </h2>
+                            <p>
+                          Working for a consumer finance company that specializes in lending various types of loans to urban customers.
+                             When the company receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile.
+                            </p>
+                            <ul>
+                                <li>If the applicant is likely to repay the loan, then not approving the loan results in a loss of business to the company.</li>
+                                <li>If the applicant is not likely to repay the loan, i.e. he/she is likely to default, then approving the loan may lead to a financial loss for the company.</li>
+                            </ul>
+                            <p>
+                                The data given below contains information about past loan applicants and whether they ‘defaulted’ or not.
+                                The aim is to identify patterns which indicate if a person is likely to default, which may be used for taking actions such as denying the loan, reducing the amount of loan, lending (to risky applicants) at a higher interest rate, etc.
+                            </p>
+
+                            <p>
+                                In this case study, you will use EDA to understand how consumer attributes and loan attributes influence the tendency of default.
+                            </p>
+                            <p>
+                                When a person applies for a loan, there are two types of decisions that could be taken by the company:
+                            </p>
+
+                            <ul>
+                                <li><strong>Loan accepted:</strong> If the company approves the loan, there are 3 possible scenarios described below:</li>
+                                <ul>
+                                    <li>Fully paid: Applicant has fully paid the loan (the principal and the interest rate)</li>
+                                    <li>Current: Applicant is in the process of paying the instalments, i.e. the tenure of the loan is not yet completed. These candidates are not labelled as 'defaulted'.</li>
+                                    <li>Charged-off: Applicant has not paid the installments in due time for a long period of time, i.e. he/she has defaulted on the loan</li>
+                                </ul>
+                                <li><strong>Loan rejected:</strong> The company had rejected the loan (because the candidate does not meet their requirements etc.). Since the loan was rejected, there is no transactional history of those applicants with the company and so this data is not available with the company (and thus in this dataset).</li>
+                            </ul>
+                            <h2>Business Objectives</h2>
+                            <p>
+                                This company is the largest online loan marketplace, facilitating personal loans, business loans, and financing of medical procedures.
+                                Borrowers can easily access lower interest rate loans through a fast online interface.
+                            </p>
+
+                            <p>
+                                Like most other lending companies, lending loans to ‘risky’ applicants is the largest source of financial loss (called credit loss).
+                                Credit loss is the amount of money lost by the lender when the borrower refuses to pay or runs away with the money owed.
+                                In other words, borrowers who default cause the largest amount of loss to the lenders.
+                                In this case, the customers labelled as 'charged-off' are the 'defaulters'.
+                            </p>
+
+                            <p>
+                                If one is able to identify these risky loan applicants, then such loans can be reduced thereby cutting down the amount of credit loss.
+                                Identification of such applicants using EDA is the aim of this case study.
+                            </p>
+
+                            <p>
+                                In other words, the company wants to understand the driving factors (or driver variables) behind loan default, i.e. the variables which are strong indicators of default.
+                                The company can utilize this knowledge for its portfolio and risk assessment.
+                            </p>
+
+                            <p>
+                                To develop your understanding of the domain, you are advised to independently research a little about risk analytics (understanding the types of variables and their significance should be enough).
+                            </p>
+                            <section id="conclusions">
+                                <h2>Conclusions</h2>
+                                <ul>
+                                    <li>Grades D, E, F, and G are Charged Off more than other grades</li>
+                                    <li>Higher installment amounts are Charged Off more than other grades</li>
+                                    <li>Higher interest rates over a period of 60 months are Charged Off compared to lower interest rates</li>
+                                    <li>Lower-income and high installments cause more percentage of charges off.</li>
+                                </ul>
+                            </section>
+
+                            <section id="technologies-used">
+                                <h2>Technologies Used</h2>
+                                <ul>
+                                    <li>python - version 3.9.7</li>
+                                    <li>pandas - version 1.3.4</li>
+                                    <li>numpy - version 3.0</li>
+                                    <li>matplotlib - version 3.0</li>
+                                    <li>seaborn - version 3.0</li>
+                                </ul>
+                            </section>
+
+                        </section>
+						</div>
+				</article><!-- #post-## -->
+
+			</div>
+		</div> <!-- /row post  -->
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+
+				<div id="comments">
+
+					<div id="respond">
+						<h3 id="reply-title">Leave a Reply</h3>
+						<form action="" method="post" id="commentform" class="">
+							<div class="form-group">
+								<label for="inputName">Name</label>
+								<input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+							</div>
+							<div class="form-group">
+								<label for="inputEmail">Email address <i class="text-danger">*</i></label>
+								<input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+							</div>
+							<div class="form-group">
+								<label for="inputWeb">Website</label>
+								<input type="nane" class="form-control" id="inputWeb" placeholder="http://">
+							</div>
+							<div class="form-group">
+								<label for="inputComment">Comment</label>
+								<textarea class="form-control" rows="6"></textarea>
+							</div>
+							<div class="row">
+								<div class="col-md-8">
+									<div class="checkbox">
+										<label> <input type="checkbox"> Subscribe to updates</label>
+									</div>
+								</div>
+								<div class="col-md-4 text-right">
+  									<button type="submit" class="btn btn-action">Submit</button>
+								</div>
+						</form>
+					</div> <!-- /respond -->
+				</div>
+			</div>
+		</div> <!-- /row comments -->
+		<div class="clearfix"></div>
+
+	</div>	<!-- /container -->
+
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p>+91 9967683343<br>
+						<a href="mailto:#">poojarynidhi@gmail.com</a><br>
+						<br>
+						Bangalore 560057
+					</p>
+				</div>
+			</div>
+
+			<div class="col-md-4 widget">
+				<h3 class="widget-title">Find me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href="https://www.linkedin.com/in/nidhi-poojary/"><i class="fa fa-linkedin fa-2"></i></a>
+<!--						<a href=""><i class="fa fa-dribbble fa-2"></i></a>-->
+						<a href="https://github.com/nid-22/"><i class="fa fa-github fa-2"></i></a>
+<!--						<a href=""><i class="fa fa-facebook fa-2"></i></a>-->
+					</p>
+				</div>
+			</div>
+
+<!--			<div class="col-md-3 widget">-->
+<!--					<h3 class="widget-title">Text widget</h3>-->
+<!--				<div class="widget-body">-->
+<!--					<p>ellat eveniet velit ipsa sunt libero sed aperiam id soluta o</p>-->
+<!--					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>-->
+<!--				</div>-->
+<!--			</div>-->
+
+			<div class="col-md-4 widget">
+				<h3 class="widget-title">Links</h3>
+				<div class="widget-body">
+					<span>
+						<a href="https://www.hackerrank.com/profile/archiquake">Hackerrank</a>
+					</span> |
+					<span>
+						<a href="https:/leetcode.com/nid_24/">Leetcode</a>
+					</span>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
