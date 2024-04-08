@@ -8,7 +8,7 @@
 
 	<title>Portfolio</title>
 
-	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	<link rel="shortcut icon" href="/assets/images/gt_favicon.png">
 
 	<!-- Bootstrap -->
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
@@ -17,16 +17,16 @@
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="/assets/css/styles.css">
 
-	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+	<!--[if lt IE 9]> <script src="/assets/js/html5shiv.js"></script> <![endif]-->
 </head>
 <body>
 
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="1">
 		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="assets/images/guy.jpg" alt="">
+			<img class="img-circle" src="/assets/images/guy.jpg" alt="">
 			<span class="title">Nidhi Poojary</span>
 			<span class="tagline">
 				 python Developer
@@ -46,9 +46,9 @@
 			<div class="navbar-collapse collapse">
 
 				<ul class="nav navbar-nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a target="_blank" href="assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
-					<li class="active"><a href="blog.html">Blog</a></li>
+					<li><a href="/index.html">Home</a></li>
+					<li><a target="_blank" href="/assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
+					<li class="active"><a href="/blog.html">Blog</a></li>
 				</ul>
 
 			</div><!--/.nav-collapse -->
@@ -66,52 +66,39 @@
  				<article class="post">
 					<header class="entry-header">
  						<div class="entry-meta">
- 							<span class="posted-on"><time class="entry-date published" date="2013-06-17">Jan 2024</time></span>
+ 							<span class="posted-on"><time class="entry-date published" date="2013-06-17">Mar 2024</time></span>
  						</div>
- 						<h1 class="entry-title"><a  rel="bookmark">Prediction using Linear Regression</a></h1>
+ 						<h1 class="entry-title"><a rel="bookmark">Smart TV Gesture Recognition </a></h1>
 						<p style="text-align: center; font-size: 16px;">
-							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/Linear-Regression-bike-sharing-casestudy">Check on Github</a>
+							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/Gesture_Recognition">Check on Github</a>
 						</p>
 					</header>
 					<div class="entry-content">
+                        
+                        <h1>Smart TV Gesture Recognition</h1>
 
-						<blockquote> Model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. </blockquote>
-						<h4>Problem Statement:</h4>
-						<p>A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.
-
-
-                         A US bike-sharing provider BoomBikes has recently suffered considerable dips in their revenues due to the ongoing Corona pandemic. The company is finding it very difficult to sustain in the current market scenario. So, it has decided to come up with a mindful business plan to be able to accelerate its revenue as soon as the ongoing lockdown comes to an end, and the economy restores to a healthy state.
-
-
-                             In such an attempt, BoomBikes aspires to understand the demand for shared bikes among the people after this ongoing quarantine situation ends across the nation due to Covid-19. They have planned this to prepare themselves to cater to the people's needs once the situation gets better all around and stand out from other service providers and make huge profits.
-							A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free.</p>
-
-						<h4>The company wants to know:</h4>
-						<ol>
-							<li>Which variables are significant in predicting the demand for shared bikes.</li>
-							<li>How well those variables describe the bike demands.</li>
-						</ol>
-
-
-						<h4>Key Steps</h4>
-
-						<ul>
-							<li>Data Preparation</li>
-							<li>Model Building : Linear Regression </li>
-							<li>Model Evaluation</li>
-						</ul>
-
-						<h2>Exploring correlations of variables:</h2>
-						<p><img alt="" src="assets/images/bike_sharing/1.png"></p>
-						<p><img alt="" src="assets/images/bike_sharing/2.png"></p>
-						<p><img alt="" src="assets/images/bike_sharing/3.png"></p>
-						<p><img alt="" src="assets/images/bike_sharing/4.png"></p>
-						<p><img alt="" src="assets/images/bike_sharing/5.png"></p>
-						<p><img alt="" src="assets/images/bike_sharing/6.png"></p>
-						<p><img alt="" src="assets/images/bike_sharing/7.png"></p>
+                        <h2>Introduction</h2>
+                        <p>This project, a collaborative effort between IIITB and Upgrad, aims to revolutionize how users interact with smart TVs. By focusing on the development of a gesture recognition feature, this initiative enables smart TVs to understand and respond to five distinct user gestures. This functionality allows users to control their TVs effortlessly without the need for a remote. Utilizing a 3D Convolutional Network (Conv3D), the system is adept at processing and interpreting spatial-temporal patterns within video sequences of user gestures, making interaction intuitive and futuristic.</p>
+                    
+                        <h2>Problem Statement</h2>
+                        <p>The core challenge addressed by this project is the accurate recognition of user gestures to control TV operations, through the analysis of sequences of RGB images. These images are processed by a sophisticated Conv3D model that interprets the gestures, transforming the way we interact with our televisions.</p>
+                    
+                        <h2>Dataset</h2>
+                        <p>The foundation of this project lies in its dataset, comprising video sequences where each sequence represents a unique gesture performed by the user. Each video consists of a sequence of 30 RGB frames, each frame with a resolution of 100x100 pixels. This forms a 4-dimensional tensor input shape that the Conv3D model processes, emphasizing the model's ability to handle complex spatial-temporal data.</p>
+                    
+                        <h2>Model Architecture</h2>
+                        <p>The project employs a sophisticated 3D Convolutional Network architecture designed specifically for processing and understanding the intricate patterns in video sequences. Below are the key components of our model architecture:</p>
+                        <ul>
+                            <li><strong>Conv3D Layers:</strong> The backbone of our model, these layers are crucial for extracting spatial-temporal features from the video sequences. By convolving through both space and time, Conv3D layers capture the dynamics of user gestures.</li>
+                            <li><strong>Activation Functions:</strong> ReLU (Rectified Linear Unit) is employed following each Conv3D layer to introduce non-linearity into the model. This function is essential for enabling the model to learn complex patterns and relationships in the data.</li>
+                            <li><strong>Pooling Layers:</strong> Specifically, MaxPooling3D layers are utilized to reduce the dimensionality of the feature maps, thus extracting the most dominant features and reducing computational load.</li>
+                            <li><strong>Fully Connected Layers:</strong> These layers serve as the decision-making component of the architecture, classifying the extracted features into one of the five gesture categories.</li>
+                            <li><strong>Output Layer:</strong> The final layer uses a softmax activation function to output a probability distribution over the five classes. This probabilistic approach allows the model to express certainty in its predictions, facilitating more reliable gesture recognition.</li>
+                        </ul>
+                        <p>This comprehensive model architecture ensures that the Smart TV Gesture Recognition Project not only meets but exceeds the requirements for creating an interactive and user-friendly smart TV experience.</p>
 
 						<h2>Jupyter Notebook:</h2>
-						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/Linear-Regression-bike-sharing-casestudy/raw/master/Regression_model_bike_sharing.ipynb" width="100%" height="600px"></iframe>
+						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/Gesture_Recognition/blob/main/Neural_Nets_Project__Code.ipynb" width="100%" height="600px"></iframe>
 					</div>
 				</article><!-- #post-## -->
 
@@ -218,6 +205,6 @@
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="assets/js/template.js"></script>
+<script src="/assets/js/template.js"></script>
 </body>
 </html>

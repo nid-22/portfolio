@@ -6,9 +6,9 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-	<title>Blog post | Portfolio</title>
+	<title>Portfolio</title>
 
-	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	<link rel="shortcut icon" href="/assets/images/gt_favicon.png">
 
 	<!-- Bootstrap -->
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="/assets/css/styles.css">
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
@@ -26,7 +26,7 @@
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="1">
 		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="assets/images/guy.jpg" alt="">
+			<img class="img-circle" src="/assets/images/guy.jpg" alt="">
 			<span class="title">Nidhi Poojary</span>
 			<span class="tagline">
 				 python Developer
@@ -37,7 +37,7 @@
 	</div>
 
 	<nav class="navbar navbar-default navbar-sticky">
-		<div class="container-fluid">
+		<div class="container-fluid"> 
 
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -46,9 +46,9 @@
 			<div class="navbar-collapse collapse">
 
 				<ul class="nav navbar-nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a target="_blank" href="assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
-					<li class="active"><a href="blog.html">Blog</a></li>
+					<li><a href="/index.html">Home</a></li>
+					<li><a target="_blank" href="/assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
+					<li class="active"><a href="/blog.html">Blog</a></li>
 				</ul>
 
 			</div><!--/.nav-collapse -->
@@ -68,65 +68,50 @@
  						<div class="entry-meta">
  							<span class="posted-on"><time class="entry-date published" date="2013-06-17">Jan 2024</time></span>
  						</div>
- 						<h1 class="entry-title"><a  rel="bookmark">Prediction in Telecom Churn</a></h1>
+ 						<h1 class="entry-title"><a  rel="bookmark">Prediction using Linear Regression</a></h1>
 						<p style="text-align: center; font-size: 16px;">
-							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/PCA-RandomForest">Check on Github</a>
+							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/Linear-Regression-bike-sharing-casestudy">Check on Github</a>
 						</p>
 					</header>
 					<div class="entry-content">
 
-						<blockquote>In the fiercely competitive telecom industry, customer retention is crucial.</blockquote>
-						<p>With an average annual churn rate of 15-25%, predicting and preventing customer churn has become a top priority. This project focuses on analyzing customer-level data from a leading telecom firm, leveraging machine learning models to identify customers at high risk of churn.</p>
+						<blockquote> Model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. </blockquote>
+						<h4>Problem Statement:</h4>
+						<p>A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.
 
-						<h2>Key Steps:</h2>
 
-						<h3>Data Understanding and Preparation:</h3>
+                         A US bike-sharing provider BoomBikes has recently suffered considerable dips in their revenues due to the ongoing Corona pandemic. The company is finding it very difficult to sustain in the current market scenario. So, it has decided to come up with a mindful business plan to be able to accelerate its revenue as soon as the ongoing lockdown comes to an end, and the economy restores to a healthy state.
+
+
+                             In such an attempt, BoomBikes aspires to understand the demand for shared bikes among the people after this ongoing quarantine situation ends across the nation due to Covid-19. They have planned this to prepare themselves to cater to the people's needs once the situation gets better all around and stand out from other service providers and make huge profits.
+							A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free.</p>
+
+						<h4>The company wants to know:</h4>
+						<ol>
+							<li>Which variables are significant in predicting the demand for shared bikes.</li>
+							<li>How well those variables describe the bike demands.</li>
+						</ol>
+
+
+						<h4>Key Steps</h4>
+
 						<ul>
-							<li>Identify useful attributes and estimate variable importance.</li>
-							<li>Perform data cleaning, missing values imputation, and outlier removal.</li>
-							<li>Standardize columns (e.g., date) into a consistent format.</li>
+							<li>Data Preparation</li>
+							<li>Model Building : Linear Regression </li>
+							<li>Model Evaluation</li>
 						</ul>
-
-						<h3>Exploratory Data Analysis (EDA):</h3>
-						<ul>
-							<li>Conduct preliminary analysis, including correlation identification and scatter plots.</li>
-							<li>Perform advanced analysis with heatmaps, histograms, and basic clustering to discover data patterns.</li>
-						</ul>
-
-						<h3>Feature Engineering and Variable Transformation:</h3>
-						<ul>
-							<li>Create new potentially useful variables through feature engineering.</li>
-							<li>Apply categorical and numerical variable transformations for data scaling.</li>
-						</ul>
-
-						<h3>Model Selection, Building, and Prediction:</h3>
-						<ul>
-							<li>Identify the problem type and select models.</li>
-							<li>Choose a training mechanism (e.g., cross-validation) and tune hyperparameters.</li>
-							<li>Test each model and evaluate based on predefined metrics.</li>
-							<li>Utilize ensemble methods to enhance model efficacy.</li>
-						</ul>
-
-						<h2>Models Explored:</h2>
-						<ul>
-							<li>Logistic Regression</li>
-							<li>Principal Component Analysis (PCA)</li>
-							<li>Random Forest</li>
-						</ul>
-
-						<p>This repository houses the code and documentation for the end-to-end process, offering insights into the telecom churn prediction journey.</p>
-						<p><em>Note: This project was undertaken as part of a competition, aiming to build a predictive model for identifying churning customers based on provided usage features.</em></p>
 
 						<h2>Exploring correlations of variables:</h2>
-						<p><img alt="" src="assets/images/telecom_churn/monthly_3g_scheme_vs_aon.jpg"></p>
-                        <p><img alt="" src="assets/images/telecom_churn/monthly_scheme_vs_aon.jpg"></p>
-                        <p><img alt="" src="assets/images/telecom_churn/params_vs_churn_probablity.jpg"></p>
-                        <p><img alt="" src="assets/images/telecom_churn/revenue_per_user.jpg"></p>
-                        <p><img alt="" src="assets/images/telecom_churn/sachet_vs_aon.jpg"></p>
-						<p><img alt="" src="assets/images/telecom_churn/correlation_matrix.jpg"></p>
+						<p><img alt="" src="/assets/images/bike_sharing/1.png"></p>
+						<p><img alt="" src="/assets/images/bike_sharing/2.png"></p>
+						<p><img alt="" src="/assets/images/bike_sharing/3.png"></p>
+						<p><img alt="" src="/assets/images/bike_sharing/4.png"></p>
+						<p><img alt="" src="/assets/images/bike_sharing/5.png"></p>
+						<p><img alt="" src="/assets/images/bike_sharing/6.png"></p>
+						<p><img alt="" src="/assets/images/bike_sharing/7.png"></p>
 
 						<h2>Jupyter Notebook:</h2>
-						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/PCA-RandomForest/raw/main/telecom%20churn%20case%20study.ipynb" width="100%" height="600px"></iframe>
+						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/Linear-Regression-bike-sharing-casestudy/raw/master/Regression_model_bike_sharing.ipynb" width="100%" height="600px"></iframe>
 					</div>
 				</article><!-- #post-## -->
 
@@ -233,6 +218,6 @@
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="assets/js/template.js"></script>
+<script src="/assets/js/template.js"></script>
 </body>
 </html>

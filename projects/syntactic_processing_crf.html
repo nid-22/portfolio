@@ -8,7 +8,7 @@
 
 	<title>Portfolio</title>
 
-	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	<link rel="shortcut icon" href="/assets/images/gt_favicon.png">
 
 	<!-- Bootstrap -->
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
@@ -17,16 +17,16 @@
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="/assets/css/styles.css">
 
-	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+	<!--[if lt IE 9]> <script src="/assets/js/html5shiv.js"></script> <![endif]-->
 </head>
 <body>
 
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="1">
 		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="assets/images/guy.jpg" alt="">
+			<img class="img-circle" src="/assets/images/guy.jpg" alt="">
 			<span class="title">Nidhi Poojary</span>
 			<span class="tagline">
 				 python Developer
@@ -46,9 +46,9 @@
 			<div class="navbar-collapse collapse">
 
 				<ul class="nav navbar-nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a target="_blank" href="assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
-					<li class="active"><a href="blog.html">Blog</a></li>
+					<li><a href="/index.html">Home</a></li>
+					<li><a target="_blank" href="/assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
+					<li class="active"><a href="/blog.html">Blog</a></li>
 				</ul>
 
 			</div><!--/.nav-collapse -->
@@ -66,45 +66,43 @@
  				<article class="post">
 					<header class="entry-header">
  						<div class="entry-meta">
- 							<span class="posted-on"><time class="entry-date published" date="2013-06-17">Jan 2024</time></span>
+ 							<span class="posted-on"><time class="entry-date published" date="2013-06-17">Mar 2024</time></span>
  						</div>
- 						<h1 class="entry-title"><a rel="bookmark">Prediction using Advanced Regression</a></h1>
+ 						<h1 class="entry-title"><a rel="bookmark">Syntactic Processing using CRF</a></h1>
 						<p style="text-align: center; font-size: 16px;">
-							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/advanced-regression-housing-price-assgn">Check on Github</a>
+							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/Syntactic-Processing-using-CRF">Check on Github</a>
 						</p>
 					</header>
 					<div class="entry-content">
+                        
 
-						<blockquote>🏡 Surprise Housing - Australian Market Entry 🌏</blockquote>
+						<h1>BeHealthy Medical NER Project</h1>
 
-						<p>Exploring Data-Driven Investment Strategies in the Australian Real Estate Market! </p>
+                        <h2>Problem Statement</h2>
+                        <p>In the vast domain of medical records, identifying specific diseases and their corresponding treatments presents a significant challenge, especially given the specialized language and implicit connections between diseases and treatments. The 'BeHealthy' project aims to bridge this gap by developing a custom NER system to extract diseases and treatments from unstructured medical text data.</p>
+                        <p><img alt="" src="/assets/images/syntactic_processing_CRF/train_sentences.png"></p>
+                        <p><img alt="" src="/assets/images/syntactic_processing_CRF/train_labels.png"></p>
+                        <p><img alt="" src="/assets/images/syntactic_processing_CRF/dictionary.png"></p>
+                        <h2>Process Overview</h2>
+                        <p>The project encompasses several key steps:</p>
+                        <ol>
+                            <li><strong>Data Preprocessing:</strong> Conversion of tokenized text data into coherent sentences and corresponding label sequences.</li>
+                            <li><strong>Concept Identification:</strong> Utilization of POS tagging to identify NOUNS and PROPNs, facilitating the extraction of medical concepts.</li>
+                            <li><strong>Feature Definition for CRF:</strong> Designing and selecting features for the CRF model, emphasizing the importance of POS tags and the context provided by adjacent words.</li>
+                            <li><strong>Feature and Label Extraction:</strong> Deriving feature values for sentences and corresponding label lists from preprocessed text.</li>
+                            <li><strong>Model Training and Evaluation:</strong> Building and evaluating a CRF model based on the defined features and target labels.</li>
+                            <li><strong>Disease and Treatment Identification:</strong> Employing the trained NER model to map diseases to their probable treatments within the dataset.</li>
+                        </ol>
 
-						<h3>Project Overview:</h3>
-						<p>Surprise Housing, a US-based real estate company, ventures into the Australian market using data analytics to make strategic property investments. </p>
-
-						<h3>Data Source:</h3>
-						<p>Data set collected from Australian house sales (CSV file provided).</p>
-
-						<h3>Objectives:</h3>
-						<ol>
-							<li>Build a regression model with regularization to predict the actual value of prospective properties.</li>
-							<li>Identify significant variables influencing house prices.</li>
-							<li>Determine how well these variables describe house prices.</li>
-							<li>Find optimal values of lambda for ridge and lasso regression.</li>
-						</ol>
-
-						<h3>Business Goal:</h3>
-						<p>Model house prices with independent variables, providing insights for strategic decision-making. Management aims to understand price dynamics, focus on high-return areas, and optimize investment strategies in the new market.</p>
-
-						<p>Ready for a data-driven market entry</p>
-
-						<h2>Exploring correlations of variables:</h2>
-						<p><img alt="" src="assets/images/housing_price/1.png"></p>
-						<p><img alt="" src="assets/images/housing_price/2.png"></p>
-						<p><img alt="" src="assets/images/housing_price/3.png"></p>
+                        <h2>Technologies Used</h2>
+                        <ul>
+                            <li>spaCy: For POS tagging and tokenization.</li>
+                            <li>sklearn-crfsuite: For building and evaluating the CRF model.</li>
+                            <li>Python</li>
+                        </ul>
 
 						<h2>Jupyter Notebook:</h2>
-						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/advanced-regression-housing-price-assgn/raw/master/HouseAssignment.ipynb" width="100%" height="600px"></iframe>
+						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/Syntactic-Processing-using-CRF/blob/main/Syntactic_processing_medical_data.ipynb" width="100%" height="600px"></iframe>
 					</div>
 				</article><!-- #post-## -->
 
@@ -211,6 +209,6 @@
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="assets/js/template.js"></script>
+<script src="/assets/js/template.js"></script>
 </body>
 </html>

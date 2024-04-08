@@ -6,9 +6,9 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-	<title>Portfolio</title>
+	<title>Blog post | Portfolio</title>
 
-	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	<link rel="shortcut icon" href="/assets/images/gt_favicon.png">
 
 	<!-- Bootstrap -->
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
@@ -17,17 +17,16 @@
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="/assets/css/styles.css">
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
-
 </head>
 <body>
 
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="1">
 		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="assets/images/guy.jpg" alt="">
+			<img class="img-circle" src="/assets/images/guy.jpg" alt="">
 			<span class="title">Nidhi Poojary</span>
 			<span class="tagline">
 				 python Developer
@@ -47,9 +46,9 @@
 			<div class="navbar-collapse collapse">
 
 				<ul class="nav navbar-nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a target="_blank" href="assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
-					<li class="active"><a href="blog.html">Blog</a></li>
+					<li><a href="/index.html">Home</a></li>
+					<li><a target="_blank" href="/assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
+					<li class="active"><a href="/blog.html">Blog</a></li>
 				</ul>
 
 			</div><!--/.nav-collapse -->
@@ -65,65 +64,69 @@
 			<div class="col-sm-8 col-sm-offset-2">
 
  				<article class="post">
-						<header class="entry-header">
-							<div class="entry-meta">
-								<span class="posted-on"><time class="entry-date published" date="2024-01-02">Jan 2023</time></span>
-							</div>
-							<h1 class="entry-title">Eseva - Government Scheme Finder</h1>
-							<p style="text-align: center; font-size: 16px;">
-								<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/eseva">Check on Github</a>
-						 	</p>
-						</header>
-						<div class="entry-content">
-
-						<h2>Project Overview</h2>
-						<p>
-							Eseva is a government scheme finder application designed to connect users with relevant government schemes.
-							The project aimed to simplify the process of discovering and applying for various government initiatives.
+					<header class="entry-header">
+ 						<div class="entry-meta">
+ 							<span class="posted-on"><time class="entry-date published" date="2013-06-17">Jan 2024</time></span>
+ 						</div>
+ 						<h1 class="entry-title"><a  rel="bookmark">Prediction in Telecom Churn</a></h1>
+						<p style="text-align: center; font-size: 16px;">
+							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/PCA-RandomForest">Check on Github</a>
 						</p>
+					</header>
+					<div class="entry-content">
 
-						<h2>Key Features</h2>
+						<blockquote>In the fiercely competitive telecom industry, customer retention is crucial.</blockquote>
+						<p>With an average annual churn rate of 15-25%, predicting and preventing customer churn has become a top priority. This project focuses on analyzing customer-level data from a leading telecom firm, leveraging machine learning models to identify customers at high risk of churn.</p>
 
-						<h3>1. Sign Up for Organisation</h3>
-						<img src="assets/images/eseva/1.jpg" alt="Sign Up for Organisation">
+						<h2>Key Steps:</h2>
 
-						<h3>2. Sign Up for Individual</h3>
-						<img src="assets/images/eseva/2.jpg" alt="Sign Up for Individual">
+						<h3>Data Understanding and Preparation:</h3>
+						<ul>
+							<li>Identify useful attributes and estimate variable importance.</li>
+							<li>Perform data cleaning, missing values imputation, and outlier removal.</li>
+							<li>Standardize columns (e.g., date) into a consistent format.</li>
+						</ul>
 
-						<h3>3. Landing Page</h3>
-						<img src="assets/images/eseva/3.jpg" alt="Landing Page">
+						<h3>Exploratory Data Analysis (EDA):</h3>
+						<ul>
+							<li>Conduct preliminary analysis, including correlation identification and scatter plots.</li>
+							<li>Perform advanced analysis with heatmaps, histograms, and basic clustering to discover data patterns.</li>
+						</ul>
 
-						<h3>4. Landing Page After Login</h3>
-						<img src="assets/images/eseva/4.jpg" alt="Landing Page After Login">
+						<h3>Feature Engineering and Variable Transformation:</h3>
+						<ul>
+							<li>Create new potentially useful variables through feature engineering.</li>
+							<li>Apply categorical and numerical variable transformations for data scaling.</li>
+						</ul>
 
-						<h3>5. Scheme page</h3>
-						<img src="assets/images/eseva/5.jpg" alt="Scheme page">
+						<h3>Model Selection, Building, and Prediction:</h3>
+						<ul>
+							<li>Identify the problem type and select models.</li>
+							<li>Choose a training mechanism (e.g., cross-validation) and tune hyperparameters.</li>
+							<li>Test each model and evaluate based on predefined metrics.</li>
+							<li>Utilize ensemble methods to enhance model efficacy.</li>
+						</ul>
 
-						<p>
-							The landing page after login features a dynamic sidebar that allows users to filter government schemes based on various criteria.
-							Users can filter schemes by industry, sector, gender, age group, etc., providing a personalized experience.
-						</p>
+						<h2>Models Explored:</h2>
+						<ul>
+							<li>Logistic Regression</li>
+							<li>Principal Component Analysis (PCA)</li>
+							<li>Random Forest</li>
+						</ul>
 
-						<h2>Card Representation</h2>
-						<p>
-							The landing page displays scheme cards, each representing a specific government initiative.
-							The cards are differentiated based on the types of schemes, making it easy for users to identify and explore relevant opportunities.
-						</p>
+						<p>This repository houses the code and documentation for the end-to-end process, offering insights into the telecom churn prediction journey.</p>
+						<p><em>Note: This project was undertaken as part of a competition, aiming to build a predictive model for identifying churning customers based on provided usage features.</em></p>
 
-						<h2>Project Guidance</h2>
-						<p>
-							This project was guided by Mr. Saudagar Barde, whose expertise and mentorship played a crucial role in its development.
-						</p>
+						<h2>Exploring correlations of variables:</h2>
+						<p><img alt="" src="/assets/images/telecom_churn/monthly_3g_scheme_vs_aon.jpg"></p>
+                        <p><img alt="" src="/assets/images/telecom_churn/monthly_scheme_vs_aon.jpg"></p>
+                        <p><img alt="" src="/assets/images/telecom_churn/params_vs_churn_probablity.jpg"></p>
+                        <p><img alt="" src="/assets/images/telecom_churn/revenue_per_user.jpg"></p>
+                        <p><img alt="" src="/assets/images/telecom_churn/sachet_vs_aon.jpg"></p>
+						<p><img alt="" src="/assets/images/telecom_churn/correlation_matrix.jpg"></p>
 
-						<section id="technologies-used">
-							<h2>Technologies Used</h2>
-							<ul>
-								<li>python</li>
-								<li>Django</li>
-								<li>mysql</li>
-								<li>HTML/css/Javascript</li>
-							</ul>
-						</section>
+						<h2>Jupyter Notebook:</h2>
+						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/PCA-RandomForest/raw/main/telecom%20churn%20case%20study.ipynb" width="100%" height="600px"></iframe>
 					</div>
 				</article><!-- #post-## -->
 
@@ -173,7 +176,6 @@
 	</div>	<!-- /container -->
 
 </main>
-
 <footer id="footer">
 	<div class="container">
 		<div class="row">
@@ -226,9 +228,11 @@
 
 
 
+
+
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="assets/js/template.js"></script>
+<script src="/assets/js/template.js"></script>
 </body>
 </html>
