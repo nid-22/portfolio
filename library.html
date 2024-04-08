@@ -8,7 +8,7 @@
 
 	<title>Portfolio</title>
 
-	<link rel="shortcut icon" href="/assets/images/gt_favicon.png">
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
 	<!-- Bootstrap -->
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
@@ -17,16 +17,17 @@
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
 
-	<!--[if lt IE 9]> <script src="/assets/js/html5shiv.js"></script> <![endif]-->
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+
 </head>
 <body>
 
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="1">
 		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="/assets/images/guy.jpg" alt="">
+			<img class="img-circle" src="assets/images/guy.jpg" alt="">
 			<span class="title">Nidhi Poojary</span>
 			<span class="tagline">
 				 python Developer
@@ -47,7 +48,7 @@
 
 				<ul class="nav navbar-nav">
 					<li><a href="/index.html">Home</a></li>
-					<li><a target="_blank" href="/assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
+					<li><a target="_blank" href="assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
 					<li class="active"><a href="/blog.html">Blog</a></li>
 				</ul>
 
@@ -66,44 +67,62 @@
  				<article class="post">
 					<header class="entry-header">
  						<div class="entry-meta">
- 							<span class="posted-on"><time class="entry-date published" date="2013-06-17">Mar 2024</time></span>
+ 							<span class="posted-on"><time class="entry-date published" date="2024-01-02">Jan 2022</time></span>
  						</div>
- 						<h1 class="entry-title"><a rel="bookmark">Syntactic Processing using CRF</a></h1>
+ 						<h1 class="entry-title"><a  rel="bookmark">Library Management System</a></h1>
 						<p style="text-align: center; font-size: 16px;">
-							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/Syntactic-Processing-using-CRF">Check on Github</a>
+							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/LibraryManagement">Check on Github</a>
 						</p>
 					</header>
 					<div class="entry-content">
-                        
 
-						<h1>BeHealthy Medical NER Project</h1>
+						<h2>Project Details</h2>
 
-                        <h2>Problem Statement</h2>
-                        <p>In the vast domain of medical records, identifying specific diseases and their corresponding treatments presents a significant challenge, especially given the specialized language and implicit connections between diseases and treatments. The 'BeHealthy' project aims to bridge this gap by developing a custom NER system to extract diseases and treatments from unstructured medical text data.</p>
-                        <p><img alt="" src="/assets/images/syntactic_processing_CRF/train_sentences.png"></p>
-                        <p><img alt="" src="/assets/images/syntactic_processing_CRF/train_labels.png"></p>
-                        <p><img alt="" src="/assets/images/syntactic_processing_CRF/dictionary.png"></p>
-                        <h2>Process Overview</h2>
-                        <p>The project encompasses several key steps:</p>
-                        <ol>
-                            <li><strong>Data Preprocessing:</strong> Conversion of tokenized text data into coherent sentences and corresponding label sequences.</li>
-                            <li><strong>Concept Identification:</strong> Utilization of POS tagging to identify NOUNS and PROPNs, facilitating the extraction of medical concepts.</li>
-                            <li><strong>Feature Definition for CRF:</strong> Designing and selecting features for the CRF model, emphasizing the importance of POS tags and the context provided by adjacent words.</li>
-                            <li><strong>Feature and Label Extraction:</strong> Deriving feature values for sentences and corresponding label lists from preprocessed text.</li>
-                            <li><strong>Model Training and Evaluation:</strong> Building and evaluating a CRF model based on the defined features and target labels.</li>
-                            <li><strong>Disease and Treatment Identification:</strong> Employing the trained NER model to map diseases to their probable treatments within the dataset.</li>
-                        </ol>
+                        <p>
+                            This project was created for an interview and  hosted on an EC2 instance on AWS.
+                        </p>
 
                         <h2>Technologies Used</h2>
                         <ul>
-                            <li>spaCy: For POS tagging and tokenization.</li>
-                            <li>sklearn-crfsuite: For building and evaluating the CRF model.</li>
-                            <li>Python</li>
+                            <li>Python 3.8</li>
+                            <li>Django 3.2.5</li>
+                            <li>PostgreSQL</li>
+                            <li>Bootstrap 3</li>
                         </ul>
 
-						<h2>Jupyter Notebook:</h2>
-						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/Syntactic-Processing-using-CRF/blob/main/Syntactic_processing_medical_data.ipynb" width="100%" height="600px"></iframe>
-					</div>
+                        <h2>Features</h2>
+                        <ul>
+                            <li>Login and register with form validation</li>
+                            <li>CRUD operations on Users and Books</li>
+                            <li>Upload excel sheet with books data. Data will be read and stored in the database</li>
+                            <li>Upload a photo of the book cover to the server</li>
+                        </ul>
+
+                        <h2>Images of the Project</h2>
+
+                        <h3>Login</h3>
+                        <img src="https://raw.githubusercontent.com/nid-22/LibraryManagement/master/website%20images/login.JPG" alt="Login">
+
+                        <h3>Register User</h3>
+                        <img src="https://raw.githubusercontent.com/nid-22/LibraryManagement/master/website%20images/register.JPG" alt="Register Users">
+
+                        <h3>Home Page</h3>
+                        <img src="https://raw.githubusercontent.com/nid-22/LibraryManagement/master/website%20images/homepage.JPG" alt="Home Page">
+
+                        <h3>View/Edit User</h3>
+                        <img src="https://raw.githubusercontent.com/nid-22/LibraryManagement/master/website%20images/View%20users.JPG" alt="View/Edit User">
+
+                        <h3>Add Book/Author</h3>
+                        <img src="https://raw.githubusercontent.com/nid-22/LibraryManagement/master/website%20images/add%20book%20and%20author.JPG" alt="Add Book/Author">
+
+                        <h3>View/Edit Books</h3>
+                        <img src="https://raw.githubusercontent.com/nid-22/LibraryManagement/master/website%20images/view-edit%20books.JPG" alt="View/Edit Books">
+
+                        <h3>Add Excel Sheet</h3>
+                        <img src="https://raw.githubusercontent.com/nid-22/LibraryManagement/master/website%20images/upload%20excel.JPG" alt="Add Excel Sheet">
+
+
+						</div>
 				</article><!-- #post-## -->
 
 			</div>
@@ -152,6 +171,7 @@
 	</div>	<!-- /container -->
 
 </main>
+
 <footer id="footer">
 	<div class="container">
 		<div class="row">
@@ -204,11 +224,9 @@
 
 
 
-
-
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="/assets/js/template.js"></script>
+<script src="assets/js/template.js"></script>
 </body>
 </html>

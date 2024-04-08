@@ -8,7 +8,7 @@
 
 	<title>Portfolio</title>
 
-	<link rel="shortcut icon" href="/assets/images/gt_favicon.png">
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
 	<!-- Bootstrap -->
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
@@ -17,17 +17,16 @@
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
-
 </head>
 <body>
 
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="1">
 		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="/assets/images/guy.jpg" alt="">
+			<img class="img-circle" src="assets/images/guy.jpg" alt="">
 			<span class="title">Nidhi Poojary</span>
 			<span class="tagline">
 				 python Developer
@@ -48,7 +47,7 @@
 
 				<ul class="nav navbar-nav">
 					<li><a href="/index.html">Home</a></li>
-					<li><a target="_blank" href="/assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
+					<li><a target="_blank" href="assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
 					<li class="active"><a href="/blog.html">Blog</a></li>
 				</ul>
 
@@ -65,65 +64,45 @@
 			<div class="col-sm-8 col-sm-offset-2">
 
  				<article class="post">
-						<header class="entry-header">
-							<div class="entry-meta">
-								<span class="posted-on"><time class="entry-date published" date="2024-01-02">Jan 2023</time></span>
-							</div>
-							<h1 class="entry-title">Eseva - Government Scheme Finder</h1>
-							<p style="text-align: center; font-size: 16px;">
-								<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/eseva">Check on Github</a>
-						 	</p>
-						</header>
-						<div class="entry-content">
-
-						<h2>Project Overview</h2>
-						<p>
-							Eseva is a government scheme finder application designed to connect users with relevant government schemes.
-							The project aimed to simplify the process of discovering and applying for various government initiatives.
+					<header class="entry-header">
+ 						<div class="entry-meta">
+ 							<span class="posted-on"><time class="entry-date published" date="2013-06-17">Mar 2024</time></span>
+ 						</div>
+ 						<h1 class="entry-title"><a rel="bookmark">Syntactic Processing using CRF</a></h1>
+						<p style="text-align: center; font-size: 16px;">
+							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/Syntactic-Processing-using-CRF">Check on Github</a>
 						</p>
+					</header>
+					<div class="entry-content">
+                        
 
-						<h2>Key Features</h2>
+						<h1>BeHealthy Medical NER Project</h1>
 
-						<h3>1. Sign Up for Organisation</h3>
-						<img src="/assets/images/eseva/1.jpg" alt="Sign Up for Organisation">
+                        <h2>Problem Statement</h2>
+                        <p>In the vast domain of medical records, identifying specific diseases and their corresponding treatments presents a significant challenge, especially given the specialized language and implicit connections between diseases and treatments. The 'BeHealthy' project aims to bridge this gap by developing a custom NER system to extract diseases and treatments from unstructured medical text data.</p>
+                        <p><img alt="" src="assets/images/syntactic_processing_CRF/train_sentences.png"></p>
+                        <p><img alt="" src="assets/images/syntactic_processing_CRF/train_labels.png"></p>
+                        <p><img alt="" src="assets/images/syntactic_processing_CRF/dictionary.png"></p>
+                        <h2>Process Overview</h2>
+                        <p>The project encompasses several key steps:</p>
+                        <ol>
+                            <li><strong>Data Preprocessing:</strong> Conversion of tokenized text data into coherent sentences and corresponding label sequences.</li>
+                            <li><strong>Concept Identification:</strong> Utilization of POS tagging to identify NOUNS and PROPNs, facilitating the extraction of medical concepts.</li>
+                            <li><strong>Feature Definition for CRF:</strong> Designing and selecting features for the CRF model, emphasizing the importance of POS tags and the context provided by adjacent words.</li>
+                            <li><strong>Feature and Label Extraction:</strong> Deriving feature values for sentences and corresponding label lists from preprocessed text.</li>
+                            <li><strong>Model Training and Evaluation:</strong> Building and evaluating a CRF model based on the defined features and target labels.</li>
+                            <li><strong>Disease and Treatment Identification:</strong> Employing the trained NER model to map diseases to their probable treatments within the dataset.</li>
+                        </ol>
 
-						<h3>2. Sign Up for Individual</h3>
-						<img src="/assets/images/eseva/2.jpg" alt="Sign Up for Individual">
+                        <h2>Technologies Used</h2>
+                        <ul>
+                            <li>spaCy: For POS tagging and tokenization.</li>
+                            <li>sklearn-crfsuite: For building and evaluating the CRF model.</li>
+                            <li>Python</li>
+                        </ul>
 
-						<h3>3. Landing Page</h3>
-						<img src="/assets/images/eseva/3.jpg" alt="Landing Page">
-
-						<h3>4. Landing Page After Login</h3>
-						<img src="/assets/images/eseva/4.jpg" alt="Landing Page After Login">
-
-						<h3>5. Scheme page</h3>
-						<img src="/assets/images/eseva/5.jpg" alt="Scheme page">
-
-						<p>
-							The landing page after login features a dynamic sidebar that allows users to filter government schemes based on various criteria.
-							Users can filter schemes by industry, sector, gender, age group, etc., providing a personalized experience.
-						</p>
-
-						<h2>Card Representation</h2>
-						<p>
-							The landing page displays scheme cards, each representing a specific government initiative.
-							The cards are differentiated based on the types of schemes, making it easy for users to identify and explore relevant opportunities.
-						</p>
-
-						<h2>Project Guidance</h2>
-						<p>
-							This project was guided by Mr. Saudagar Barde, whose expertise and mentorship played a crucial role in its development.
-						</p>
-
-						<section id="technologies-used">
-							<h2>Technologies Used</h2>
-							<ul>
-								<li>python</li>
-								<li>Django</li>
-								<li>mysql</li>
-								<li>HTML/css/Javascript</li>
-							</ul>
-						</section>
+						<h2>Jupyter Notebook:</h2>
+						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/Syntactic-Processing-using-CRF/blob/main/Syntactic_processing_medical_data.ipynb" width="100%" height="600px"></iframe>
 					</div>
 				</article><!-- #post-## -->
 
@@ -173,7 +152,6 @@
 	</div>	<!-- /container -->
 
 </main>
-
 <footer id="footer">
 	<div class="container">
 		<div class="row">
@@ -226,9 +204,11 @@
 
 
 
+
+
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="/assets/js/template.js"></script>
+<script src="assets/js/template.js"></script>
 </body>
 </html>

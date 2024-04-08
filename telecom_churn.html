@@ -6,9 +6,9 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-	<title>Portfolio</title>
+	<title>Blog post | Portfolio</title>
 
-	<link rel="shortcut icon" href="/assets/images/gt_favicon.png">
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
 	<!-- Bootstrap -->
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
@@ -17,17 +17,16 @@
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="assets/css/styles.css">
 
-
-	<!--[if lt IE 9]> <script src="/assets/js/html5shiv.js"></script> <![endif]-->
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
 <body>
 
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="1">
 		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="/assets/images/guy.jpg" alt="">
+			<img class="img-circle" src="assets/images/guy.jpg" alt="">
 			<span class="title">Nidhi Poojary</span>
 			<span class="tagline">
 				 python Developer
@@ -48,7 +47,7 @@
 
 				<ul class="nav navbar-nav">
 					<li><a href="/index.html">Home</a></li>
-					<li><a target="_blank" href="/assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
+					<li><a target="_blank" href="assets/images/Nidhi_Poojary_2024_resume.pdf">Resume</a></li>
 					<li class="active"><a href="/blog.html">Blog</a></li>
 				</ul>
 
@@ -67,55 +66,67 @@
  				<article class="post">
 					<header class="entry-header">
  						<div class="entry-meta">
- 							<span class="posted-on"><time class="entry-date published" date="2013-06-17">Mar 2024</time></span>
+ 							<span class="posted-on"><time class="entry-date published" date="2013-06-17">Jan 2024</time></span>
  						</div>
- 						<h1 class="entry-title"><a rel="bookmark">Melanoma Detection using CNN</a></h1>
+ 						<h1 class="entry-title"><a  rel="bookmark">Prediction in Telecom Churn</a></h1>
 						<p style="text-align: center; font-size: 16px;">
-							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/CNN_melonoma_detection">Check on Github</a>
+							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/PCA-RandomForest">Check on Github</a>
 						</p>
 					</header>
 					<div class="entry-content">
-                        
 
-						<blockquote>Accurately detecting melanoma, a deadly type of skin cancer</blockquote>
+						<blockquote>In the fiercely competitive telecom industry, customer retention is crucial.</blockquote>
+						<p>With an average annual churn rate of 15-25%, predicting and preventing customer churn has become a top priority. This project focuses on analyzing customer-level data from a leading telecom firm, leveraging machine learning models to identify customers at high risk of churn.</p>
 
-                        <h1>Table of Contents</h1>
-                        <ul>
-                            <li>General Info</li>
-                            <li>Technologies Used</li>
-                            <li>Conclusions</li>
-                        </ul>
-                        
-                        <h2>General Information</h2>
-                        <p>Dataset can be downloaded <a href="https://drive.google.com/file/d/1xLfSQUGDl8ezNNbUkpuHOYvSpTyxVhCs/view">here</a></p>
-                        <p>This project aims to build a multiclass classification model using a custom convolutional neural network (CNN) in TensorFlow to accurately detect melanoma, a deadly type of skin cancer.</p>
-                        <p>The dataset used for this project consists of 2357 images of malignant and benign oncological diseases, including melanoma, obtained from the International Skin Imaging Collaboration (ISIC).</p>
-                        <p>The goal is to develop a solution that can evaluate images and alert dermatologists about the presence of melanoma, thereby reducing manual effort needed in diagnosis.</p>
-                        <h5>Background</h5>
-                        <p>Melanoma accounts for 75% of skin cancer deaths and can be deadly if not detected early. Early detection of melanoma is crucial for successful treatment. However, manual diagnosis of melanoma from images can be time-consuming and prone to errors. Therefore, building an accurate and automated detection model using machine learning techniques can assist dermatologists in diagnosing melanoma more efficiently.</p>
-                        <h5>Business Problem</h5>
-                        <p>The business problem addressed by this project is the accurate detection of melanoma from skin images using machine learning. By developing a CNN-based model, dermatologists can potentially diagnose melanoma more quickly and accurately, leading to earlier detection and better treatment outcomes for patients.</p>
-                        <h5>Dataset Used</h5>
-                        <p> The dataset used in this project consists of 2357 images of malignant and benign oncological diseases, obtained from the International Skin Imaging Collaboration (ISIC). The dataset contains images of various diseases, including melanoma, actinic keratosis, basal cell carcinoma, dermatofibroma, nevus, pigmented benign keratosis, seborrheic keratosis, squamous cell carcinoma, and vascular lesion. Each class has a different number of samples, with melanoma being one of the classes of interest due to its significance in skin cancer diagnosis.</p>
-                        <p><img alt="" src="/assets/images/melanoma_detection/skincancer_types.png"></p>
-                        <h2>Conclusions</h2>
-                        <p>By training a custom CNN model on the original dataset, it was observed that the model suffered from overfitting, as evidenced by a high training accuracy and low validation accuracy.</p>
-                        <p>Data augmentation techniques were applied to address overfitting and improve model generalization. After training the model on augmented data, there was a significant improvement in validation accuracy, indicating that the overfitting issue was mitigated.</p>
-                        <p>Class distribution analysis revealed that some classes had significantly fewer samples compared to others, indicating class imbalances in the dataset.</p>
-                        <p>Class imbalance was rectified using the Augmentor library, which generated additional augmented samples for classes with fewer samples. After training the model on the rectified class imbalance data, there was a notable improvement in model performance and class-wise accuracy.</p>
-                        
-                        <h2>Technologies Used</h2>
-                        <ul>
-                            <li>TensorFlow - version 2.0</li>
-                            <li>Augmentor - version 0.2.8</li>
-                        </ul>
+						<h2>Key Steps:</h2>
 
-						<h2>Training vs Validation Accuracy:</h2>
-						
-						<p><img alt="" src="/assets/images/melanoma_detection/training_vs_validation_accuracy.png"></p>
+						<h3>Data Understanding and Preparation:</h3>
+						<ul>
+							<li>Identify useful attributes and estimate variable importance.</li>
+							<li>Perform data cleaning, missing values imputation, and outlier removal.</li>
+							<li>Standardize columns (e.g., date) into a consistent format.</li>
+						</ul>
+
+						<h3>Exploratory Data Analysis (EDA):</h3>
+						<ul>
+							<li>Conduct preliminary analysis, including correlation identification and scatter plots.</li>
+							<li>Perform advanced analysis with heatmaps, histograms, and basic clustering to discover data patterns.</li>
+						</ul>
+
+						<h3>Feature Engineering and Variable Transformation:</h3>
+						<ul>
+							<li>Create new potentially useful variables through feature engineering.</li>
+							<li>Apply categorical and numerical variable transformations for data scaling.</li>
+						</ul>
+
+						<h3>Model Selection, Building, and Prediction:</h3>
+						<ul>
+							<li>Identify the problem type and select models.</li>
+							<li>Choose a training mechanism (e.g., cross-validation) and tune hyperparameters.</li>
+							<li>Test each model and evaluate based on predefined metrics.</li>
+							<li>Utilize ensemble methods to enhance model efficacy.</li>
+						</ul>
+
+						<h2>Models Explored:</h2>
+						<ul>
+							<li>Logistic Regression</li>
+							<li>Principal Component Analysis (PCA)</li>
+							<li>Random Forest</li>
+						</ul>
+
+						<p>This repository houses the code and documentation for the end-to-end process, offering insights into the telecom churn prediction journey.</p>
+						<p><em>Note: This project was undertaken as part of a competition, aiming to build a predictive model for identifying churning customers based on provided usage features.</em></p>
+
+						<h2>Exploring correlations of variables:</h2>
+						<p><img alt="" src="assets/images/telecom_churn/monthly_3g_scheme_vs_aon.jpg"></p>
+                        <p><img alt="" src="assets/images/telecom_churn/monthly_scheme_vs_aon.jpg"></p>
+                        <p><img alt="" src="assets/images/telecom_churn/params_vs_churn_probablity.jpg"></p>
+                        <p><img alt="" src="assets/images/telecom_churn/revenue_per_user.jpg"></p>
+                        <p><img alt="" src="assets/images/telecom_churn/sachet_vs_aon.jpg"></p>
+						<p><img alt="" src="assets/images/telecom_churn/correlation_matrix.jpg"></p>
 
 						<h2>Jupyter Notebook:</h2>
-						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/CNN_melonoma_detection/blob/main/Assignment_CNN_Skin_Cancer.ipynb" width="100%" height="600px"></iframe>
+						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/PCA-RandomForest/raw/main/telecom%20churn%20case%20study.ipynb" width="100%" height="600px"></iframe>
 					</div>
 				</article><!-- #post-## -->
 
@@ -222,6 +233,6 @@
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="/assets/js/template.js"></script>
+<script src="assets/js/template.js"></script>
 </body>
 </html>
