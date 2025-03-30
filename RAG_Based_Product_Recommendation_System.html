@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A RAG-based semantic search engine for fashion products">
+	<meta name="author" content="Nidhi Poojary">
+
+	<title>Portfolio</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+	<!-- Bootstrap -->
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icon font -->
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+<body>
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="1">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src="assets/images/guy.jpg" alt="">
+			<span class="title">Nidhi Poojary</span>
+			<span class="tagline">
+					 Software Developer<br>
+					<a href="mailto:poojarynidhi@gmail.com">poojarynidhi@gmail.com</a> | 9967683343
+			</span>
+		</h1>
+	</div>
+
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/index.html">Home</a></li>
+					<li><a target="_blank" href="assets/images/Resume_Nidhi_Poojary_2025.pdf">Resume</a></li>
+					<li class="active"><a href="/blog.html">Blog</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<main id="main">
+	<div class="container">
+		<div class="row topspace">
+			<div class="col-sm-8 col-sm-offset-2">
+				<article class="post">
+					<header class="entry-header">
+						<div class="entry-meta">
+							<span class="posted-on"><time class="entry-date published" date="2024-03-30">Mar 2024</time></span>
+						</div>
+						<h1 class="entry-title"><a rel="bookmark">Semantic Fashion Search with RAG</a></h1>
+						<p style="text-align: center; font-size: 16px;">
+							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/semantic-search-with-rag">Check on Github</a>
+						</p>
+					</header>
+					<div class="entry-content">
+
+						<blockquote>Intelligent semantic search and product recommendation using RAG over the Myntra fashion dataset</blockquote>
+
+						<h1>Table of Contents</h1>
+						<ul>
+							<li>Project Overview</li>
+							<li>Technologies Used</li>
+							<li>Key Features</li>
+							<li>Screenshots</li>
+						</ul>
+
+						<h2>Project Overview</h2>
+						<p>This project implements a full-stack Retrieval-Augmented Generation (RAG) system for fashion product search using the Myntra dataset. It supports semantic query handling, vector-based retrieval, cross-encoder reranking, and final response generation using a language model.</p>
+
+						<h5>Layers Implemented:</h5>
+						<ul>
+							<li><strong>Embedding Layer:</strong> Vectorized product metadata using OpenAI and SentenceTransformer embeddings.</li>
+							<li><strong>Search Layer:</strong> ChromaDB for top-k retrieval and cross-encoder re-ranking.</li>
+							<li><strong>Generation Layer:</strong> Used Zephyr-7B for LLM-based answer generation with dynamic prompting.</li>
+						</ul>
+
+						<h2>Technologies Used</h2>
+						<ul>
+							<li>Sentence Transformers</li>
+							<li>Hugging Face Transformers</li>
+							<li>ChromaDB</li>
+							<li>OpenAI (optional)</li>
+							<li>Pandas, PIL, Matplotlib</li>
+						</ul>
+
+						<h2>Key Features</h2>
+						<ul>
+							<li>Semantic search over product descriptions</li>
+							<li>Multi-model experimentation (MiniLM, OpenAI, Zephyr)</li>
+							<li>Dynamic prompt construction with reranked context</li>
+							<li>Image and metadata display for top results</li>
+						</ul>
+
+						<h2>Screenshots</h2>
+						<p><img alt="" src="assets/images/rag_fashion/search_results.png"></p>
+						<p><img alt="" src="assets/images/rag_fashion/generated_response.png"></p>
+
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p>+91 9967683343<br>
+						<a href="mailto:poojarynidhi@gmail.com">poojarynidhi@gmail.com</a><br>
+						<br>
+						Bangalore 560057
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 widget">
+				<h3 class="widget-title">Find me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href="https://www.linkedin.com/in/nidhi-poojary/"><i class="fa fa-linkedin fa-2"></i></a>
+						<a href="https://github.com/nid-22/"><i class="fa fa-github fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 widget">
+				<h3 class="widget-title">Links</h3>
+				<div class="widget-body">
+					<span><a href="https://www.hackerrank.com/profile/archiquake">Hackerrank</a></span> |
+					<span><a href="https://leetcode.com/nid_24/">Leetcode</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- JavaScript libs -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
