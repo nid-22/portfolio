@@ -65,10 +65,31 @@
 			<!-- Sidebar -->
 			<aside class="col-sm-4 sidebar sidebar-right">
 
-				<ul class="nav text-right nav-side">
+				<style>
+				.custom-sidebar-nav {
+					font-size: 1.1em;
+					margin-top: 30px;
+				}
+				.custom-sidebar-nav > li > a {
+					font-weight: 600;
+					letter-spacing: 0.5px;
+					color: #222;
+					background: #f5f7fa;
+					border-radius: 4px;
+					margin-bottom: 8px;
+					transition: background 0.2s, color 0.2s;
+				}
+				.custom-sidebar-nav > li.active > a,
+				.custom-sidebar-nav > li > a:focus,
+				.custom-sidebar-nav > li > a:hover {
+					background: #2563eb;
+					color: #fff;
+				}
+				</style>
+				<ul class="nav nav-pills nav-stacked nav-side custom-sidebar-nav">
 					<li class="active"><a href="#about-me">About Me</a></li>
-					<li><a href="#backend-infra">Backend Development & Cloud</a></li>
-					<li><a href="#ml-ai">Machine Learning & AI</a></li>
+					<li><a href="#backend-infra">Backend Development &amp; Cloud</a></li>
+					<li><a href="#ml-ai">Machine Learning &amp; AI</a></li>
 				</ul>
 
 			</aside>
@@ -76,13 +97,13 @@
 
 			<!-- Article main content -->
 			<article class="col-sm-8 maincontent">
-			<h2 id="about-me">About Me</h2>
+			<h2 id="about-me" style="scroll-margin-top:100px;">About Me</h2>
 			<p>
 				I am a <b>Software Developer</b> with <b>4 years of experience</b> building scalable backend systems and deploying them on the <b>cloud</b>.
 				My expertise lies in designing <b>microservices</b> with <b>Python</b> and <b>Django</b>, managing <b>AWS infrastructure</b>, and applying <b>machine learning</b> concepts to real-world projects. I combine strong backend engineering with a growing specialization in data-driven applications.
 			</p>
 
-			<h2 id="backend-infra">Backend Development & Infrastructure</h2>
+			<h2 id="backend-infra" style="scroll-margin-top:100px;">Backend Development &amp; Cloud</h2>
 			<ul>
 				<li><b>Languages:</b> Python, JavaScript</li>
 				<li><b>Frameworks:</b> Django, Node</li>
@@ -94,7 +115,7 @@
 				<li><b>Other Tools:</b> Docker, Redis, Celery</li>
 			</ul>
 
-			<h2 id="ml-ai">Machine Learning & AI</h2>
+			<h2 id="ml-ai" style="scroll-margin-top:100px;">Machine Learning &amp; AI</h2>
 			<p>
 				I completed a <b>PG Diploma in ML & AI</b> (IIIT Bangalore + UpGrad, 2023–2024), where I worked on projects covering:
 			</p>
