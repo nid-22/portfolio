@@ -82,87 +82,86 @@
                             </object>
 						<h2>Table of Contents</h2>
                         <ul>
-                            <li><a href="#general-information">General Information</a></li>
                             <li><a href="#technologies-used">Technologies Used</a></li>
+                            <li><a href="#general-information">General Information</a></li>
                             <li><a href="#conclusions">Conclusions</a></li>
                         </ul>
+                        <section id="technologies-used">
+                            <h2>Technologies Used</h2>
+                            <ul>
+                                <li><b>Python</b> - version 3.9.7</li>
+                                <li><b>Pandas</b> - version 1.3.4</li>
+                                <li><b>Numpy</b> - version 3.0</li>
+                                <li><b>Matplotlib</b> - version 3.0</li>
+                                <li><b>Seaborn</b> - version 3.0</li>
+                            </ul>
+                        </section>
                         <section id="general-information">
                             <h2>
                                 General Information
                             </h2>
                             <p>
-                          Working for a consumer finance company that specializes in lending various types of loans to urban customers.
-                             When the company receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile.
+                                You are working for a <b>consumer finance company</b> that specializes in lending various types of loans to urban customers.
+                            </p>
+                            <p>
+                                When the company receives a loan application, it must decide whether to approve the loan based on the applicant’s profile.
                             </p>
                             <ul>
-                                <li>If the applicant is likely to repay the loan, then not approving the loan results in a loss of business to the company.</li>
-                                <li>If the applicant is not likely to repay the loan, i.e. he/she is likely to default, then approving the loan may lead to a financial loss for the company.</li>
+                                <li>
+                                    If the applicant is <b>likely to repay</b> the loan, not approving the loan results in a <b>loss of business</b> for the company.
+                                </li>
+                                <li>
+                                    If the applicant is <b>not likely to repay</b> (i.e., likely to default), approving the loan may lead to a <b>financial loss</b> for the company.
+                                </li>
                             </ul>
                             <p>
-                                The data given below contains information about past loan applicants and whether they ‘defaulted’ or not.
-                                The aim is to identify patterns which indicate if a person is likely to default, which may be used for taking actions such as denying the loan, reducing the amount of loan, lending (to risky applicants) at a higher interest rate, etc.
-                            </p>
-
-                            <p>
-                                In this case study, you will use EDA to understand how consumer attributes and loan attributes influence the tendency of default.
+                                The data provided contains information about past loan applicants and whether they <b>defaulted</b> or not.
                             </p>
                             <p>
-                                When a person applies for a loan, there are two types of decisions that could be taken by the company:
+                                The aim is to <b>identify patterns</b> that indicate if a person is likely to default. This can help in taking actions such as denying the loan, reducing the loan amount, or lending to risky applicants at a higher interest rate.
                             </p>
-
+                            <p>
+                                In this case study, you will use <b>Exploratory Data Analysis (EDA)</b> to understand how consumer and loan attributes influence the tendency to default.
+                            </p>
+                            <p>
+                                When a person applies for a loan, the company can take two types of decisions:
+                            </p>
                             <ul>
-                                <li><strong>Loan accepted:</strong> If the company approves the loan, there are 3 possible scenarios described below:</li>
-                                <ul>
-                                    <li>Fully paid: Applicant has fully paid the loan (the principal and the interest rate)</li>
-                                    <li>Current: Applicant is in the process of paying the instalments, i.e. the tenure of the loan is not yet completed. These candidates are not labelled as 'defaulted'.</li>
-                                    <li>Charged-off: Applicant has not paid the installments in due time for a long period of time, i.e. he/she has defaulted on the loan</li>
-                                </ul>
-                                <li><strong>Loan rejected:</strong> The company had rejected the loan (because the candidate does not meet their requirements etc.). Since the loan was rejected, there is no transactional history of those applicants with the company and so this data is not available with the company (and thus in this dataset).</li>
+                                <li>
+                                    <b>Loan accepted:</b> If the company approves the loan, there are three possible scenarios:
+                                    <ul>
+                                        <li><b>Fully paid:</b> Applicant has fully paid the loan (principal and interest).</li>
+                                        <li><b>Current:</b> Applicant is still paying installments; the loan tenure is not yet completed. These are not labeled as 'defaulted'.</li>
+                                        <li><b>Charged-off:</b> Applicant has not paid installments for a long period, i.e., has defaulted on the loan.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Loan rejected:</b> The company rejected the loan (e.g., the candidate does not meet requirements). There is no transactional history for these applicants, so this data is not available in the dataset.
+                                </li>
                             </ul>
                             <h2>Business Objectives</h2>
                             <p>
-                                This company is the largest online loan marketplace, facilitating personal loans, business loans, and financing of medical procedures.
-                                Borrowers can easily access lower interest rate loans through a fast online interface.
+                                The company is the <b>largest online loan marketplace</b>, facilitating personal loans, business loans, and financing of medical procedures. Borrowers can access <b>lower interest rate loans</b> through a fast online interface.
                             </p>
-
                             <p>
-                                Like most other lending companies, lending loans to ‘risky’ applicants is the largest source of financial loss (called credit loss).
-                                Credit loss is the amount of money lost by the lender when the borrower refuses to pay or runs away with the money owed.
-                                In other words, borrowers who default cause the largest amount of loss to the lenders.
-                                In this case, the customers labelled as 'charged-off' are the 'defaulters'.
+                                Like most lending companies, lending to <b>risky applicants</b> is the largest source of financial loss (called <b>credit loss</b>). Credit loss is the amount lost when a borrower refuses to pay or runs away with the money owed. In this case, customers labeled as <b>'charged-off'</b> are the defaulters.
                             </p>
-
                             <p>
-                                If one is able to identify these risky loan applicants, then such loans can be reduced thereby cutting down the amount of credit loss.
-                                Identification of such applicants using EDA is the aim of this case study.
+                                If risky loan applicants can be identified, such loans can be reduced, thereby cutting down credit loss. <b>Identification of such applicants using EDA</b> is the aim of this case study.
                             </p>
-
                             <p>
-                                In other words, the company wants to understand the driving factors (or driver variables) behind loan default, i.e. the variables which are strong indicators of default.
-                                The company can utilize this knowledge for its portfolio and risk assessment.
+                                The company wants to understand the <b>driving factors</b> (driver variables) behind loan default, i.e., variables that are strong indicators of default. This knowledge can be used for portfolio and risk assessment.
                             </p>
-
                             <p>
-                                To develop your understanding of the domain, you are advised to independently research a little about risk analytics (understanding the types of variables and their significance should be enough).
+                                To develop your understanding of the domain, you are advised to research <b>risk analytics</b> (understanding the types of variables and their significance should be enough).
                             </p>
                             <section id="conclusions">
                                 <h2>Conclusions</h2>
                                 <ul>
-                                    <li>Grades D, E, F, and G are Charged Off more than other grades</li>
-                                    <li>Higher installment amounts are Charged Off more than other grades</li>
-                                    <li>Higher interest rates over a period of 60 months are Charged Off compared to lower interest rates</li>
-                                    <li>Lower-income and high installments cause more percentage of charges off.</li>
-                                </ul>
-                            </section>
-
-                            <section id="technologies-used">
-                                <h2>Technologies Used</h2>
-                                <ul>
-                                    <li>python - version 3.9.7</li>
-                                    <li>pandas - version 1.3.4</li>
-                                    <li>numpy - version 3.0</li>
-                                    <li>matplotlib - version 3.0</li>
-                                    <li>seaborn - version 3.0</li>
+                                    <li><b>Grades D, E, F, and G</b> are charged off more than other grades.</li>
+                                    <li><b>Higher installment amounts</b> are charged off more frequently.</li>
+                                    <li><b>Higher interest rates</b> over a period of 60 months are charged off more compared to lower interest rates.</li>
+                                    <li><b>Lower income</b> and <b>high installments</b> cause a higher percentage of charge-offs.</li>
                                 </ul>
                             </section>
 
@@ -172,46 +171,6 @@
 
 			</div>
 		</div> <!-- /row post  -->
-
-		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
-
-				<div id="comments">
-
-					<div id="respond">
-						<h3 id="reply-title">Leave a Reply</h3>
-						<form action="" method="post" id="commentform" class="">
-							<div class="form-group">
-								<label for="inputName">Name</label>
-								<input type="text" class="form-control" id="inputName" placeholder="Enter your name">
-							</div>
-							<div class="form-group">
-								<label for="inputEmail">Email address <i class="text-danger">*</i></label>
-								<input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
-							</div>
-							<div class="form-group">
-								<label for="inputWeb">Website</label>
-								<input type="nane" class="form-control" id="inputWeb" placeholder="https://">
-							</div>
-							<div class="form-group">
-								<label for="inputComment">Comment</label>
-								<textarea class="form-control" rows="6"></textarea>
-							</div>
-							<div class="row">
-								<div class="col-md-8">
-									<div class="checkbox">
-										<label> <input type="checkbox"> Subscribe to updates</label>
-									</div>
-								</div>
-								<div class="col-md-4 text-right">
-  									<button type="submit" class="btn btn-action">Submit</button>
-								</div>
-						</form>
-					</div> <!-- /respond -->
-				</div>
-			</div>
-		</div> <!-- /row comments -->
-		<div class="clearfix"></div>
 
 	</div>	<!-- /container -->
 
@@ -274,4 +233,5 @@
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="assets/js/template.js"></script>
 </body>
+</html>
 </html>
