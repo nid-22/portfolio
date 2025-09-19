@@ -75,88 +75,49 @@
 					</header>
 					<div class="entry-content">
 
-						<blockquote> Model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. </blockquote>
-						<h4>Problem Statement:</h4>
-						<p>A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.
+<blockquote><b>Objective:</b> Model the demand for shared bikes using available independent variables. This helps management understand how demand varies with different features.</blockquote>
 
+<h4><b>Problem Statement</b></h4>
+<p>
+	A <b>bike-sharing system</b> is a service where bikes are made available for shared use to individuals on a short-term basis, either for a price or for free. Many systems allow users to borrow a bike from a computer-controlled "dock" after entering payment information. The bike can then be returned to any other dock in the system.
+</p>
+<p>
+	<b>BoomBikes</b>, a US-based bike-sharing provider, has recently experienced a significant drop in revenue due to the COVID-19 pandemic. The company is struggling to sustain itself in the current market scenario. To address this, BoomBikes aims to develop a strategic business plan to accelerate revenue as soon as the lockdown ends and the economy recovers.
+</p>
+<p>
+	As part of this plan, BoomBikes wants to <b>understand the demand for shared bikes</b> after the quarantine ends. This will help them prepare to meet customer needs, outperform competitors, and maximize profits as the situation improves.
+</p>
 
-                         A US bike-sharing provider BoomBikes has recently suffered considerable dips in their revenues due to the ongoing Corona pandemic. The company is finding it very difficult to sustain in the current market scenario. So, it has decided to come up with a mindful business plan to be able to accelerate its revenue as soon as the ongoing lockdown comes to an end, and the economy restores to a healthy state.
+<h4><b>The Company Wants to Know</b></h4>
+<ol>
+	<li><b>Which variables are significant</b> in predicting the demand for shared bikes?</li>
+	<li><b>How well do these variables explain</b> the bike demand?</li>
+</ol>
 
+<h4><b>Key Steps</b></h4>
+<ul>
+	<li><b>Data Preparation</b></li>
+	<li><b>Model Building:</b> Linear Regression</li>
+	<li><b>Model Evaluation</b></li>
+</ul>
 
-                             In such an attempt, BoomBikes aspires to understand the demand for shared bikes among the people after this ongoing quarantine situation ends across the nation due to Covid-19. They have planned this to prepare themselves to cater to the people's needs once the situation gets better all around and stand out from other service providers and make huge profits.
-							A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free.</p>
+<h2><b>Exploring Correlations of Variables</b></h2>
+<p>The following images illustrate the correlations between different variables and bike demand:</p>
+<p><img alt="Correlation 1" src="assets/images/bike_sharing/1.png"></p>
+<p><img alt="Correlation 2" src="assets/images/bike_sharing/2.png"></p>
+<p><img alt="Correlation 3" src="assets/images/bike_sharing/3.png"></p>
+<p><img alt="Correlation 4" src="assets/images/bike_sharing/4.png"></p>
+<p><img alt="Correlation 5" src="assets/images/bike_sharing/5.png"></p>
+<p><img alt="Correlation 6" src="assets/images/bike_sharing/6.png"></p>
+<p><img alt="Correlation 7" src="assets/images/bike_sharing/7.png"></p>
 
-						<h4>The company wants to know:</h4>
-						<ol>
-							<li>Which variables are significant in predicting the demand for shared bikes.</li>
-							<li>How well those variables describe the bike demands.</li>
-						</ol>
-
-
-						<h4>Key Steps</h4>
-
-						<ul>
-							<li>Data Preparation</li>
-							<li>Model Building : Linear Regression </li>
-							<li>Model Evaluation</li>
-						</ul>
-
-						<h2>Exploring correlations of variables:</h2>
-						<p><img alt="" src="assets/images/bike_sharing/1.png"></p>
-						<p><img alt="" src="assets/images/bike_sharing/2.png"></p>
-						<p><img alt="" src="assets/images/bike_sharing/3.png"></p>
-						<p><img alt="" src="assets/images/bike_sharing/4.png"></p>
-						<p><img alt="" src="assets/images/bike_sharing/5.png"></p>
-						<p><img alt="" src="assets/images/bike_sharing/6.png"></p>
-						<p><img alt="" src="assets/images/bike_sharing/7.png"></p>
-
-						<h2>Jupyter Notebook:</h2>
-						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/Linear-Regression-bike-sharing-casestudy/raw/master/Regression_model_bike_sharing.ipynb" width="100%" height="600px"></iframe>
 					</div>
 				</article><!-- #post-## -->
 
 			</div>
 		</div> <!-- /row post  -->
 
-		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
-
-				<div id="comments">
-
-					<div id="respond">
-						<h3 id="reply-title">Leave a Reply</h3>
-						<form action="" method="post" id="commentform" class="">
-							<div class="form-group">
-								<label for="inputName">Name</label>
-								<input type="text" class="form-control" id="inputName" placeholder="Enter your name">
-							</div>
-							<div class="form-group">
-								<label for="inputEmail">Email address <i class="text-danger">*</i></label>
-								<input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
-							</div>
-							<div class="form-group">
-								<label for="inputWeb">Website</label>
-								<input type="nane" class="form-control" id="inputWeb" placeholder="https://">
-							</div>
-							<div class="form-group">
-								<label for="inputComment">Comment</label>
-								<textarea class="form-control" rows="6"></textarea>
-							</div>
-							<div class="row">
-								<div class="col-md-8">
-									<div class="checkbox">
-										<label> <input type="checkbox"> Subscribe to updates</label>
-									</div>
-								</div>
-								<div class="col-md-4 text-right">
-  									<button type="submit" class="btn btn-action">Submit</button>
-								</div>
-						</form>
-					</div> <!-- /respond -->
-				</div>
-			</div>
-		</div> <!-- /row comments -->
-		<div class="clearfix"></div>
+		
 
 	</div>	<!-- /container -->
 
