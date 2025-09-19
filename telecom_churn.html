@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-	<title>Blog post | Portfolio</title>
+	<title>Portfolio</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
@@ -75,31 +75,55 @@
 					</header>
 					<div class="entry-content">
 
-						<blockquote>In the fiercely competitive telecom industry, customer retention is crucial.</blockquote>
-						<p>With an average annual churn rate of 15-25%, predicting and preventing customer churn has become a top priority. This project focuses on analyzing customer-level data from a leading telecom firm, leveraging machine learning models to identify customers at high risk of churn.</p>
+						<h2>Table of Contents</h2>
+                        <ul>
+                            <li><a href="#technologies-used">Technologies Used</a></li>
+                            <li><a href="#general-information">General Information</a></li>
+                            <li><a href="#conclusions">Conclusions</a></li>
+                        </ul>
+                        <section id="technologies-used">
+                            <h2>Technologies Used</h2>
+                            <ul>
+                                <li><b>Python</b> - version 3.9.7</li>
+                                <li><b>Pandas</b> - version 1.3.4</li>
+                                <li><b>Numpy</b> - version 3.0</li>
+                                <li><b>Matplotlib</b> - version 3.0</li>
+                                <li><b>Seaborn</b> - version 3.0</li>
+                            </ul>
+                        </section>
 
-						<h2>Key Steps:</h2>
+						<section id="general-information">
+						<blockquote><b>In the fiercely competitive telecom industry, customer retention is crucial.</b></blockquote>
+						<p>
+							With an average annual churn rate of <b>15-25%</b>, predicting and preventing customer churn has become a top priority.
+						</p>
+						<p>
+							This project focuses on analyzing <b>customer-level data</b> from a leading telecom firm, leveraging <b>machine learning models</b> to identify customers at high risk of churn.
+						</p>
+						</section>
 
-						<h3>Data Understanding and Preparation:</h3>
+						<h2>General-Information</h2>
+
+						<h3>Data Understanding and Preparation</h3>
 						<ul>
 							<li>Identify useful attributes and estimate variable importance.</li>
 							<li>Perform data cleaning, missing values imputation, and outlier removal.</li>
 							<li>Standardize columns (e.g., date) into a consistent format.</li>
 						</ul>
 
-						<h3>Exploratory Data Analysis (EDA):</h3>
+						<h3>Exploratory Data Analysis (EDA)</h3>
 						<ul>
 							<li>Conduct preliminary analysis, including correlation identification and scatter plots.</li>
 							<li>Perform advanced analysis with heatmaps, histograms, and basic clustering to discover data patterns.</li>
 						</ul>
 
-						<h3>Feature Engineering and Variable Transformation:</h3>
+						<h3>Feature Engineering and Variable Transformation</h3>
 						<ul>
 							<li>Create new potentially useful variables through feature engineering.</li>
 							<li>Apply categorical and numerical variable transformations for data scaling.</li>
 						</ul>
 
-						<h3>Model Selection, Building, and Prediction:</h3>
+						<h3>Model Selection, Building, and Prediction</h3>
 						<ul>
 							<li>Identify the problem type and select models.</li>
 							<li>Choose a training mechanism (e.g., cross-validation) and tune hyperparameters.</li>
@@ -107,23 +131,32 @@
 							<li>Utilize ensemble methods to enhance model efficacy.</li>
 						</ul>
 
-						<h2>Models Explored:</h2>
+						<h2>Models Explored</h2>
 						<ul>
-							<li>Logistic Regression</li>
-							<li>Principal Component Analysis (PCA)</li>
-							<li>Random Forest</li>
+							<li><b>Logistic Regression</b></li>
+							<li><b>Principal Component Analysis (PCA)</b></li>
+							<li><b>Random Forest</b></li>
 						</ul>
 
-						<p>This repository houses the code and documentation for the end-to-end process, offering insights into the telecom churn prediction journey.</p>
-						<p><em>Note: This project was undertaken as part of a competition, aiming to build a predictive model for identifying churning customers based on provided usage features.</em></p>
+						<p>
+							This repository houses the code and documentation for the <b>end-to-end process</b>, offering insights into the telecom churn prediction journey.
+						</p>
+						<p>
+							<em>Note: This project was undertaken as part of a competition, aiming to build a predictive model for identifying churning customers based on provided usage features.</em>
+						</p>
 
-						<h2>Exploring correlations of variables:</h2>
-						<p><img alt="" src="assets/images/telecom_churn/monthly_3g_scheme_vs_aon.jpg"></p>
-                        <p><img alt="" src="assets/images/telecom_churn/monthly_scheme_vs_aon.jpg"></p>
-                        <p><img alt="" src="assets/images/telecom_churn/params_vs_churn_probablity.jpg"></p>
-                        <p><img alt="" src="assets/images/telecom_churn/revenue_per_user.jpg"></p>
-                        <p><img alt="" src="assets/images/telecom_churn/sachet_vs_aon.jpg"></p>
-						<p><img alt="" src="assets/images/telecom_churn/correlation_matrix.jpg"></p>
+						<section id="conclusions">
+						<h2>Exploring Correlations of Variables</h2>
+						<p>
+							Below are some visualizations that highlight important relationships and patterns in the data:
+						</p>
+						<p><img alt="Monthly 3G Scheme vs AON" src="assets/images/telecom_churn/monthly_3g_scheme_vs_aon.jpg"></p>
+                        <p><img alt="Monthly Scheme vs AON" src="assets/images/telecom_churn/monthly_scheme_vs_aon.jpg"></p>
+                        <p><img alt="Parameters vs Churn Probability" src="assets/images/telecom_churn/params_vs_churn_probablity.jpg"></p>
+                        <p><img alt="Revenue per User" src="assets/images/telecom_churn/revenue_per_user.jpg"></p>
+                        <p><img alt="Sachet vs AON" src="assets/images/telecom_churn/sachet_vs_aon.jpg"></p>
+						<p><img alt="Correlation Matrix" src="assets/images/telecom_churn/correlation_matrix.jpg"></p>
+						</section>
 
 					</div>
 				</article><!-- #post-## -->
@@ -160,7 +193,7 @@
 				</div>
 			</div>
 
-<!--			<div class="col-md-3 widget">-->
+<!--			<div class="col-md-3 widget">--> 
 <!--					<h3 class="widget-title">Text widget</h3>-->
 <!--				<div class="widget-body">-->
 <!--					<p>ellat eveniet velit ipsa sunt libero sed aperiam id soluta o</p>-->
