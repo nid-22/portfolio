@@ -70,96 +70,62 @@
  						</div>
  						<h1 class="entry-title"><a rel="bookmark">Melanoma Detection using CNN</a></h1>
 						<p style="text-align: center; font-size: 16px;">
-							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/CNN_melonoma_detection">Check on Github</a>
+							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/CNN_melonoma_detection" target="_blank">Check on Github</a>
 						</p>
 					</header>
 					<div class="entry-content">
                         
 
-						<blockquote>Accurately detecting melanoma, a deadly type of skin cancer</blockquote>
+						<blockquote><b>Accurately detecting melanoma</b>, a deadly type of skin cancer</blockquote>
 
-                        <h1>Table of Contents</h1>
-                        <ul>
-                            <li>General Info</li>
-                            <li>Technologies Used</li>
-                            <li>Conclusions</li>
-                        </ul>
-                        
-                        <h2>General Information</h2>
-                        <p>Dataset can be downloaded <a href="https://drive.google.com/file/d/1xLfSQUGDl8ezNNbUkpuHOYvSpTyxVhCs/view">here</a></p>
-                        <p>This project aims to build a multiclass classification model using a custom convolutional neural network (CNN) in TensorFlow to accurately detect melanoma, a deadly type of skin cancer.</p>
-                        <p>The dataset used for this project consists of 2357 images of malignant and benign oncological diseases, including melanoma, obtained from the International Skin Imaging Collaboration (ISIC).</p>
-                        <p>The goal is to develop a solution that can evaluate images and alert dermatologists about the presence of melanoma, thereby reducing manual effort needed in diagnosis.</p>
-                        <h5>Background</h5>
-                        <p>Melanoma accounts for 75% of skin cancer deaths and can be deadly if not detected early. Early detection of melanoma is crucial for successful treatment. However, manual diagnosis of melanoma from images can be time-consuming and prone to errors. Therefore, building an accurate and automated detection model using machine learning techniques can assist dermatologists in diagnosing melanoma more efficiently.</p>
-                        <h5>Business Problem</h5>
-                        <p>The business problem addressed by this project is the accurate detection of melanoma from skin images using machine learning. By developing a CNN-based model, dermatologists can potentially diagnose melanoma more quickly and accurately, leading to earlier detection and better treatment outcomes for patients.</p>
-                        <h5>Dataset Used</h5>
-                        <p> The dataset used in this project consists of 2357 images of malignant and benign oncological diseases, obtained from the International Skin Imaging Collaboration (ISIC). The dataset contains images of various diseases, including melanoma, actinic keratosis, basal cell carcinoma, dermatofibroma, nevus, pigmented benign keratosis, seborrheic keratosis, squamous cell carcinoma, and vascular lesion. Each class has a different number of samples, with melanoma being one of the classes of interest due to its significance in skin cancer diagnosis.</p>
-                        <p><img alt="" src="assets/images/melanoma_detection/skincancer_types.png"></p>
-                        <h2>Conclusions</h2>
-                        <p>By training a custom CNN model on the original dataset, it was observed that the model suffered from overfitting, as evidenced by a high training accuracy and low validation accuracy.</p>
-                        <p>Data augmentation techniques were applied to address overfitting and improve model generalization. After training the model on augmented data, there was a significant improvement in validation accuracy, indicating that the overfitting issue was mitigated.</p>
-                        <p>Class distribution analysis revealed that some classes had significantly fewer samples compared to others, indicating class imbalances in the dataset.</p>
-                        <p>Class imbalance was rectified using the Augmentor library, which generated additional augmented samples for classes with fewer samples. After training the model on the rectified class imbalance data, there was a notable improvement in model performance and class-wise accuracy.</p>
-                        
-                        <h2>Technologies Used</h2>
-                        <ul>
-                            <li>TensorFlow - version 2.0</li>
-                            <li>Augmentor - version 0.2.8</li>
-                        </ul>
+						<h1>Table of Contents</h1>
+						<ul>
+							<li><b>Technologies Used</b></li>
+							<li><b>General Info</b></li>
+							<li><b>Conclusions</b></li>
+						</ul>
+
+						<h2>Technologies Used</h2>
+						<ul>
+							<li><b>TensorFlow</b> - version 2.0</li>
+							<li><b>Augmentor</b> - version 0.2.8</li>
+						</ul>
+
+						<h2>General Information</h2>
+						<p><b>Dataset:</b> Can be downloaded <a href="https://drive.google.com/file/d/1xLfSQUGDl8ezNNbUkpuHOYvSpTyxVhCs/view">here</a>.</p>
+						<p>This project aims to build a <b>multiclass classification model</b> using a custom <b>convolutional neural network (CNN)</b> in <b>TensorFlow</b> to accurately detect <b>melanoma</b>, a deadly type of skin cancer.</p>
+						<p>The dataset used for this project consists of <b>2357 images</b> of malignant and benign oncological diseases, including melanoma, obtained from the <b>International Skin Imaging Collaboration (ISIC)</b>.</p>
+						<p>The goal is to develop a solution that can evaluate images and <b>alert dermatologists</b> about the presence of melanoma, thereby reducing manual effort needed in diagnosis.</p>
+
+						<h5>Background</h5>
+						<p><b>Melanoma accounts for 75% of skin cancer deaths</b> and can be deadly if not detected early.</p>
+						<p><b>Early detection</b> of melanoma is crucial for successful treatment. However, manual diagnosis of melanoma from images can be time-consuming and prone to errors.</p>
+						<p>Therefore, building an <b>accurate and automated detection model</b> using machine learning techniques can assist dermatologists in diagnosing melanoma more efficiently.</p>
+
+						<h5>Business Problem</h5>
+						<p>The business problem addressed by this project is the <b>accurate detection of melanoma</b> from skin images using machine learning.</p>
+						<p>By developing a <b>CNN-based model</b>, dermatologists can potentially diagnose melanoma more quickly and accurately, leading to <b>earlier detection</b> and better treatment outcomes for patients.</p>
+
+						<h5>Dataset Used</h5>
+						<p>The dataset used in this project consists of <b>2357 images</b> of malignant and benign oncological diseases, obtained from the <b>International Skin Imaging Collaboration (ISIC)</b>.</p>
+						<p>The dataset contains images of various diseases, including <b>melanoma, actinic keratosis, basal cell carcinoma, dermatofibroma, nevus, pigmented benign keratosis, seborrheic keratosis, squamous cell carcinoma, and vascular lesion</b>.</p>
+						<p>Each class has a different number of samples, with <b>melanoma</b> being one of the classes of interest due to its significance in skin cancer diagnosis.</p>
+						<p><img alt="Skin cancer types" src="assets/images/melanoma_detection/skincancer_types.png"></p>
 
 						<h2>Training vs Validation Accuracy:</h2>
-						
-						<p><img alt="" src="assets/images/melanoma_detection/training_vs_validation_accuracy.png"></p>
+						<p><img alt="Training vs Validation Accuracy" src="assets/images/melanoma_detection/training_vs_validation_accuracy.png"></p>
 
-						<h2>Jupyter Notebook:</h2>
-						<iframe src="https://nbviewer.jupyter.org/urls/github.com/nid-22/CNN_melonoma_detection/blob/main/Assignment_CNN_Skin_Cancer.ipynb" width="100%" height="600px"></iframe>
+						<h2>Conclusions</h2>
+						<p>By training a custom <b>CNN model</b> on the original dataset, it was observed that the model suffered from <b>overfitting</b>, as evidenced by a high training accuracy and low validation accuracy.</p>
+						<p><b>Data augmentation techniques</b> were applied to address overfitting and improve model generalization. After training the model on augmented data, there was a significant improvement in validation accuracy, indicating that the overfitting issue was mitigated.</p>
+						<p><b>Class distribution analysis</b> revealed that some classes had significantly fewer samples compared to others, indicating <b>class imbalances</b> in the dataset.</p>
+						<p>Class imbalance was rectified using the <b>Augmentor library</b>, which generated additional augmented samples for classes with fewer samples. After training the model on the rectified class imbalance data, there was a notable improvement in model performance and class-wise accuracy.</p>
+
 					</div>
 				</article><!-- #post-## -->
 
 			</div>
 		</div> <!-- /row post  -->
-
-		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
-
-				<div id="comments">
-
-					<div id="respond">
-						<h3 id="reply-title">Leave a Reply</h3>
-						<form action="" method="post" id="commentform" class="">
-							<div class="form-group">
-								<label for="inputName">Name</label>
-								<input type="text" class="form-control" id="inputName" placeholder="Enter your name">
-							</div>
-							<div class="form-group">
-								<label for="inputEmail">Email address <i class="text-danger">*</i></label>
-								<input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
-							</div>
-							<div class="form-group">
-								<label for="inputWeb">Website</label>
-								<input type="nane" class="form-control" id="inputWeb" placeholder="https://">
-							</div>
-							<div class="form-group">
-								<label for="inputComment">Comment</label>
-								<textarea class="form-control" rows="6"></textarea>
-							</div>
-							<div class="row">
-								<div class="col-md-8">
-									<div class="checkbox">
-										<label> <input type="checkbox"> Subscribe to updates</label>
-									</div>
-								</div>
-								<div class="col-md-4 text-right">
-  									<button type="submit" class="btn btn-action">Submit</button>
-								</div>
-						</form>
-					</div> <!-- /respond -->
-				</div>
-			</div>
-		</div> <!-- /row comments -->
-		<div class="clearfix"></div>
 
 	</div>	<!-- /container -->
 
