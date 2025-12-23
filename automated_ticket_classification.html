@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+	<title>Automated Ticket Classification | Portfolio</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+	<!-- Bootstrap -->
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icon font -->
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+<body>
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src="assets/images/guy.jpg" alt="">
+			<span class="title">Nidhi Poojary</span>
+			<span class="tagline">
+				 Software Developer | ML
+				<br>
+				<a href="">poojarynidhi@gmail.com</a>| 9967683343
+			</span>
+		</h1>
+	</div>
+
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+
+			<div class="navbar-collapse collapse">
+
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Me</a></li>
+				</ul>
+
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+</header>
+
+<main id="main">
+
+n	<div class="container">
+
+		<div class="row topspace">
+			<div class="col-sm-8 col-sm-offset-2">
+
+				<article class="post">
+					<header class="entry-header">
+						<div class="entry-meta">
+							<span class="posted-on"><time class="entry-date published" date="2024-11-15">Nov 2024</time></span>
+						</div>
+						<h1 class="entry-title"><a rel="bookmark">Automated Ticket Classification</a></h1>
+						<p style="text-align: center; font-size: 16px;">
+							<a style="color: blue; text-decoration: underline; font-weight: bold;" href="https://github.com/nid-22/Automated_Ticket_Classification" target="_blank">Check on Github</a>
+						</p>
+					</header>
+					<div class="entry-content">
+
+						<blockquote><b>Classify customer support tickets into product/service categories using topic modelling + supervised learning</b></blockquote>
+
+						<h2>Table of Contents</h2>
+						<ul>
+							<li>Problem Statement</li>
+							<li>Pipelines</li>
+							<li>Data Preparation</li>
+							<li>Exploratory Data Analysis (EDA)</li>
+							<li>Topic Modelling</li>
+							<li>Supervised Modeling & Evaluation</li>
+							<li>Results & Conclusion</li>
+						</ul>
+
+						<h2>Problem Statement</h2>
+						<p>
+							Build a model to classify customer complaints (support tickets) into product/service categories so they can be routed to the correct department for faster resolution.
+						</p>
+						<ul>
+							<li>Target categories (5): <b>Credit card / Prepaid card</b>, <b>Bank account services</b>, <b>Theft/Dispute reporting</b>, <b>Mortgages/loans</b>, <b>Others</b></li>
+						</ul>
+
+						<h2>Pipelines (8 major tasks)</h2>
+						<ol>
+							<li>Data loading</li>
+							<li>Text preprocessing</li>
+							<li>Exploratory data analysis (EDA)</li>
+							<li>Feature extraction</li>
+							<li>Topic modelling (NMF)</li>
+							<li>Model building using supervised learning</li>
+							<li>Model training and evaluation</li>
+							<li>Model inference</li>
+						</ol>
+
+						<h2>Data Preparation</h2>
+						<p>Key preprocessing steps applied before topic modelling:</p>
+						<ul>
+							<li>Drop blank / empty complaints</li>
+							<li>Lowercase all text</li>
+							<li>Remove text in square brackets, punctuation, and words containing numbers</li>
+							<li>Lemmatize tokens</li>
+							<li>Extract POS tags and keep only nouns (POS == "NN") to focus topics on substantive words</li>
+						</ul>
+
+						<h2>Exploratory Data Analysis (EDA)</h2>
+						<ul>
+							<li>Visualise distribution of complaint lengths (characters)</li>
+							<li>Word cloud of top 40 words after preprocessing</li>
+							<li>Top unigrams, bigrams and trigrams by frequency</li>
+						</ul>
+
+						<!-- EDA visuals -->
+						<p style="text-align:center; margin-top:12px;">
+							<img src="assets/images/automated_ticket_classification/unigram_bigram.png" alt="Unigram and Bigram Frequencies" style="max-width:100%;height:auto;border-radius:6px;" />
+						</p>
+
+						<h2>Topic Modelling</h2>
+						<p>
+							Applied <b>NMF</b> on TF-IDF features to extract 5 topics representing the target departments. Each ticket is mapped to its dominant topic; these topic labels are then used as targets for supervised training.
+						</p>
+
+						<!-- Topic modelling visuals -->
+						<p style="text-align:center; margin-top:12px;">
+							<img src="assets/images/automated_ticket_classification/topic_modelling.png" alt="Topic Modelling - NMF Topics" style="max-width:100%;height:auto;border-radius:6px;" />
+						</p>
+
+						<h2>Supervised Modeling &amp; Evaluation</h2>
+						<p>After topic labels are derived, we train supervised classifiers. Typical steps:</p>
+						<ul>
+							<li>Create count vectors (CountVectorizer) and transform to TF-IDF</li>
+							<li>Split data into train &amp; test sets</li>
+							<li>Train multiple models: Logistic Regression, Decision Tree, Random Forest (Naive Bayes optional)</li>
+							<li>Evaluate with accuracy, ROC-AUC, classification report</li>
+						</ul>
+
+						<h2>Results (example)</h2>
+						<p>Hyperparameter tuning with GridSearchCV found Logistic Regression performed best:</p>
+						<ul>
+							<li><b>Best Score:</b> 0.9589979737224642</li>
+							<li><b>Best Hyperparameters:</b> {'C': 1, 'penalty': 'l1', 'solver': 'saga'}</li>
+						</ul>
+						<p>Selected metrics:</p>
+						<ul>
+							<li><b>ROC AUC Score Train:</b> 0.98</li>
+							<li><b>ROC AUC Score Test:</b> 0.95</li>
+							<li><b>Train Accuracy :</b> 0.85</li>
+							<li><b>Test Accuracy :</b> 0.78</li>
+						</ul>
+
+						<h3>Classification Report (Train)</h3>
+
+						<!-- Confusion matrix for final logistic regression model -->
+						<p style="text-align:center; margin-top:12px;">
+							<img src="assets/images/automated_ticket_classification/logistic_regression_with gris_search.png" alt="Logistic Regression Confusion Matrix (Grid Search)" style="max-width:100%;height:auto;border-radius:6px;" />
+						</p>
+						<pre>
+              precision    recall  f1-score   support
+
+          0       0.85      0.90      0.87      4218
+          1       0.82      0.88      0.85      3818
+          2       0.90      0.63      0.74      1715
+          3       0.85      0.86      0.86      3261
+          4       0.89      0.87      0.88      2792
+
+   accuracy                           0.85     15804
+  macro avg       0.86      0.83      0.84     15804
+weighted avg       0.86      0.85      0.85     15804
+						</pre>
+
+						<h3>Classification Report (Test)</h3>
+						<pre>
+              precision    recall  f1-score   support
+
+          0       0.79      0.85      0.82      1406
+          1       0.75      0.82      0.78      1272
+          2       0.78      0.45      0.57       572
+          3       0.79      0.79      0.79      1087
+          4       0.83      0.82      0.82       931
+
+   accuracy                           0.78      5268
+  macro avg       0.79      0.75      0.76      5268
+weighted avg       0.78      0.78      0.78      5268
+						</pre>
+
+						<h2>Conclusion</h2>
+						<p>
+							Topic modelling (NMF) + supervised classifiers provide a pragmatic pipeline to convert unlabeled complaint data into routable categories. Logistic Regression with L1 regularization (saga solver) achieved the best results here; the pipeline is production-ready after further validation and monitoring.
+						</p>
+
+					</div>
+				</article><!-- #post-## -->
+
+			</div>
+		</div> <!-- /row post  -->
+
+
+	</div> 	<!-- /container -->
+
+</main>
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p>+91 9967683343<br>
+						<a href="mailto:#">poojarynidhi@gmail.com</a><br>
+						<br>
+						Bangalore 560057
+					</p>
+				</div>
+			</div>
+
+			<div class="col-md-4 widget">
+				<h3 class="widget-title">Find me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href="https://www.linkedin.com/in/nidhi-poojary/"><i class="fa fa-linkedin fa-2"></i></a>
+						<a href="https://github.com/nid-22/"><i class="fa fa-github fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-md-4 widget">
+				<h3 class="widget-title">Links</h3>
+				<div class="widget-body">
+					<span>
+						<a href="https://www.hackerrank.com/profile/archiquake">Hackerrank</a>
+					</span> |
+					<span>
+						<a href="https://leetcode.com/nid_24/">Leetcode</a>
+					</span>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
